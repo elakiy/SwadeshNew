@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.wankys.www.swadeshurja"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.shopbycategory.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.github.f0ris.sweetalert:library:1.5.1'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support:cardview-v7:27.1.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okio:okio:1.10.0'
+    compile 'com.android.support:recyclerview-v7:27.1.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.github.santalu:auto-viewpager:1.0.1'
+    compile 'com.romandanylyk:pageindicatorview:0.1.1'
+    compile 'jp.wasabeef:blurry:2.1.1'
+    compile 'com.github.jrvansuita:GaussianBlur:+'
+    compile 'com.sothree.slidinguppanel:library:3.4.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile group: 'de.greenrobot', name: 'eventbus', version: '2.3.0'
+    compile 'io.card:android-sdk:5.4.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/paynimo_v3.2_uat.jar')
+    compile 'com.google.firebase:firebase-ads:9.6.0'
+    compile 'com.google.firebase:firebase-analytics:9.6.0'
+    //noinspection GradleCompatible
+    compile 'com.google.firebase:firebase-messaging:9.6.0'
+    compile 'com.google.firebase:firebase-core:9.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.0'
+            }
+        }
+    }
+}

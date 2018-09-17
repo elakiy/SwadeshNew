@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home"
+            tools:ignore="HardcodedText" />
+
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_address"
+            android:icon="@drawable/address"
+            android:title="Manage address" />
+        <item
+            android:id="@+id/nav_sell"
+            android:icon="@drawable/sell_icon"
+            android:title="Sell on Swadesh Urja"></item>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contact"
+                android:title="Contact us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

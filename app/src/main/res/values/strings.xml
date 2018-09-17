@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Swadesh Urja</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_signout">Sign Out</string>
+    <string name="controlgears"><![CDATA[<face="verdana"> Control Gear</font>]]></string>
+    <string name="shopby"><![CDATA[Shop by <br><b> &nbsp Brand &nbsp </b>]]></string>
+
+    <string name="err_msg_email">Please Enter A Valid Email Id</string>
+    <string name="address_string">Flat / House No. / Floor / Building</string>
+    <string name="locality_string">Colony / Street / Locality </string>
+    <string name="deliver_to_this_address">Deliver to this address</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="quntity">Quntity : </string>
+    <string name="_1">1</string>
+    <string name="quantity">Quantity</string>
+    <string name="mrp">MRP :  </string>
+    <string name="you_save">You Save :  </string>
+    <string name="total">Total :  </string>
+</resources>

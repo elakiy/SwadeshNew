@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d4d2d2">
+
+<TableLayout
+    android:id="@+id/ll"
+    android:layout_marginRight="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TableRow android:background="#fff">
+    <TextView
+        android:padding="4dp"
+        android:text="bjscdd"
+        android:textColor="#000"
+        android:id="@+id/catno_id"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"/>
+        <View android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:background="#000" />
+    <TextView
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:text="bjscdd"
+        android:textColor="#000"
+        android:id="@+id/mrp_id"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp" />
+        <View android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:background="#000" />
+    <TextView
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:text="bjscdd"
+        android:textColor="#000"
+        android:id="@+id/disc_id"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"/>
+        <View android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:background="#000" />
+    <Spinner
+        android:id="@+id/spinner_id"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp" />
+        <View android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:background="#000" />
+    <CheckBox
+        android:id="@+id/checkbox_id"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </TableRow>
+</TableLayout>
+    <View
+        android:layout_below="@+id/ll"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</RelativeLayout>

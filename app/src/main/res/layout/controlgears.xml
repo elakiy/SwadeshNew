@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleSwipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/vf1"
+        layout="@layout/viewflipperimages" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recently Added products"
+                android:layout_margin="8dp"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/grid_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+      <!--<RelativeLayout-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="180dp">-->
+          <!--<com.santalu.autoviewpager.AutoViewPager-->
+              <!--android:id="@+id/viewpager_id1"-->
+              <!--android:layout_width="match_parent"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--app:avp_autoScroll="true"-->
+              <!--app:avp_duration="3000"-->
+              <!--app:avp_indeterminate="true"/>-->
+          <!--<com.rd.PageIndicatorView-->
+              <!--android:layout_margin="3dp"-->
+              <!--android:id="@+id/indicator1"-->
+              <!--android:layout_width="wrap_content"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:layout_alignParentBottom="true"-->
+              <!--android:layout_centerHorizontal="true"-->
+              <!--android:padding="16dp"-->
+              <!--app:piv_selectedColor="@color/colorWhite"-->
+              <!--app:piv_unselectedColor="@color/colorPrimary"-->
+              <!--app:piv_viewPager="@+id/view_pager_id"/>-->
+      <!--</RelativeLayout>-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contactors"
+            android:layout_margin="8dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contactors_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <TextView
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thermal Overload Relays"
+                android:layout_margin="8dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/thermal_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+      <!--<RelativeLayout-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="180dp">-->
+          <!--<com.santalu.autoviewpager.AutoViewPager-->
+              <!--android:id="@+id/viewpager_id2"-->
+              <!--android:layout_width="match_parent"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--app:avp_autoScroll="true"-->
+              <!--app:avp_duration="3000"-->
+              <!--app:avp_indeterminate="true"/>-->
+          <!--<com.rd.PageIndicatorView-->
+              <!--android:layout_margin="3dp"-->
+              <!--android:id="@+id/indicator2"-->
+              <!--android:layout_width="wrap_content"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:layout_alignParentBottom="true"-->
+              <!--android:layout_centerHorizontal="true"-->
+              <!--android:padding="16dp"-->
+              <!--app:piv_selectedColor="@color/colorWhite"-->
+              <!--app:piv_unselectedColor="@color/colorPrimary"-->
+              <!--app:piv_viewPager="@+id/view_pager_id"/>-->
+      <!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <TextView
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starters"
+                android:layout_margin="8dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/motorprotect_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
